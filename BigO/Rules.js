@@ -1,3 +1,5 @@
+//https://www.bigocheatsheet.com/
+
 const { performance } = require('perf_hooks');
 
 //create a large array
@@ -63,3 +65,21 @@ function compressBoxesTwice(boxes, boxes2) {
         console.log(boxes);
     });
 } //different terms for inputs -> O(a + b)
+
+
+//RULE 4: drop non dominants
+function printAllNumbersThenAllPairSums(numbers) {
+    //O(n)
+    numbers.forEach((number) => {
+        console.log(number);
+    });      
+
+    //O(n^2)
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = 0; j < numbers.length; j++) {
+            console.log(numbers[i] + numbers[j]);            
+        }
+    }
+} // consider the dominant notation => O(n + n^2) => O(n^2)
+
+printAllNumbersThenAllPairSums([1,2,3,4,5]);
