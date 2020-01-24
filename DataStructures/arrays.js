@@ -21,3 +21,11 @@ strings.unshift('x'); //O(n) - all items are reorganized in memory - not the bes
 strings.splice(2, 0, 'z'); //O(n/2) => O(n)
 
 console.log(strings);
+
+
+//static arrays: C++
+//int a[20]; int[5] {1, 2, 3, 4, 5}
+
+//in Javascript, they automatically allocate memory according the increase resize
+//with we add a new letter to initial strings array, it usually doubles the space (it'll copy the entire array)
+
