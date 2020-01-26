@@ -16,7 +16,6 @@
     console.log(i); //var i has value 100, but it's out the if statement
 })();
 
-
 console.log(i); //now i is not defined - error
 
 //the let statement use block similar to OOP or when 'use strict' in js.
@@ -30,6 +29,17 @@ console.log(i); //now i is not defined - error
     }
 
     console.log(i); //ReferenceError: i is not defined
+})();
+
+(() => {
+    //console.log(i); //ReferenceError: i is not defined
+
+    if (true) {
+        const i = 100;
+        console.log(i); //print 100
+    }
+
+    //console.log(i); //ReferenceError: i is not defined
 })();
 
 //the Const just like let uses block scope, so it has all the properties of let besides the ability to prevent redeclaration of the variable. 
