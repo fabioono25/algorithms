@@ -109,6 +109,16 @@ class LinkedList {
 
         return currentNode;
     }
+
+    remove(index) {
+        //check the parameters
+        const leader = this.traverseToIndex(index-1); //O(n)
+        const unwantedNode = leader.next;
+        leader.next = unwantedNode.next;
+
+        this.length--;
+        return this.printList();
+    }
 }
 
 
@@ -123,5 +133,7 @@ myLinkedList.prepend(1);
 myLinkedList.insert(2, 99); //1 --> 10 --> 99 -- > 5 --> 16
 
 //myLinkedList.insert(222, 102); //1 --> 10 --> 99 -- > 5 --> 16
+
+myLinkedList.remove(3); //[ 1, 10, 99, 16 ]
 
 console.log(myLinkedList.printList());
