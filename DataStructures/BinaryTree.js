@@ -137,6 +137,7 @@ class Node {
           }
         }
       }
+      
   }
   
   const tree = new BinarySearchTree();
