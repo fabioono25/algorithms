@@ -18,7 +18,7 @@ function fibonacciIterative(n){ //O(n)
 
 fibonacciIterative(3);
   
-function fibonacciRecursive(n) { //O(2^n)
+function fibonacciRecursive(n) { //O(2^n) - a lot of calculations - not efficient
 
     if (n < 2) {
         return n;
@@ -28,3 +28,26 @@ function fibonacciRecursive(n) { //O(2^n)
 }
 
 fibonacciRecursive(3)
+
+//using dynamic programming to solve Fibonacci: O(n)
+function fibonacciWithCache() {
+    let cache = {};
+    return function fib(n) { //time complexity: O(n) -- drawback is space complexity
+        if (n in cache) {
+            return cache[n];
+        } else 
+        {
+            if (n < 2) {
+                return n;
+            }
+            else {
+                cache[n] = fib(n-1) + fib(n-2);
+                return cache[n];
+            }
+        }
+    }
+}
+
+const fasterFib = fibonacciWithCache();
+fasterFib(10);
+
