@@ -1,3 +1,5 @@
+//as the inputs increase, the number of operations increases in same amount
+
 const { performance } = require('perf_hooks');
 
 //create a large array
