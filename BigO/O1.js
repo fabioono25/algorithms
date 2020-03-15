@@ -14,3 +14,5 @@ function logFirstTwoItems(array) {
 
 logFirstTwoItems(largeArray); //O(1) - it doesn't matter how many returns will have in this case
 //for convention it'll be always O(1)
+
+'asasdasdasdasdasd'.length; //constant time //O(1) - it's a property
