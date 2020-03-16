@@ -1,3 +1,5 @@
+//Arrays are a collection of items organized sequentially
+
 const strings = ['a','b','c','d']; //positions in memory 0, 1, 2, 3
 
 //4 items - 32 bits -> 4 * 4 = 16 bytes of storage
@@ -24,8 +26,7 @@ console.log(strings);
 
 
 //static arrays: C++
-//int a[20]; int[5] {1, 2, 3, 4, 5}
+//int a[20]; int[5] {1, 2, 3, 4, 5} - to add one more item, we must copy the entire array
 
-//in Javascript, they automatically allocate memory according the increase resize
+//in Javascript/Python, the arrays are automatically allocate memory according the increase resize
 //with we add a new letter to initial strings array, it usually doubles the space (it'll copy the entire array)
-

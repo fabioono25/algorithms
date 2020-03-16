@@ -31,7 +31,7 @@ class HashTable {
           hash = (hash + key.charCodeAt(i) * i) % this.data.length
       }
       return hash;
-    }
+    } //O(1) - using a key
 
     set(key, value){
         var address = this._hash(key);
@@ -59,15 +59,37 @@ class HashTable {
     }
 
     //iterate through all the keys
-    keys() {
-        const keysArray = [];
-        for (let i = 0; i < this.data.length; i++) {
-            if (this.data[i]) {
-                keysArray.push(this.data[i][0][0])
-            }           
+    // keys() {
+    //     const keysArray = [];
+    //     for (let i = 0; i < this.data.length; i++) {
+    //         if (this.data[i]) {
+    //             keysArray.push(this.data[i][0][0])
+    //         }           
+    //     }
+    //     return keysArray;
+    // }
+
+    keys() { //with collision prevention
+        if (!this.data.length) {
+          return undefined
         }
-        return keysArray;
-    }
+        let result = []
+        // loop through all the elements
+        for (let i = 0; i < this.data.length; i++) {
+            // if it's not an empty memory cell
+            if (this.data[i] && this.data[i].length) {
+              // but also loop through all the potential collisions
+              if (this.data.length > 1) {
+                for (let j = 0; j < this.data[i].length; j++) {
+                  result.push(this.data[i][j][0])
+                }
+              } else {
+                result.push(this.data[i][0])
+              } 
+            }
+        }
+        return result; 
+      }
   }
 
  
