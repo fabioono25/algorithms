@@ -37,3 +37,23 @@ for num in numbers: #linear search - O(n)
         maximum = num
 
 print("Max value is", maximum, ".")
+
+shopping = ['butter', 'bread']
+shopping += ["eggs"]
+
+print(shopping) #['butter', 'bread', 'eggs']
+
+#The only difference is that range returns a Python list object and xrange returns an xrange object. ... 
+# It means that xrange doesn't actually generate a static list at run-time like range does.
+
+repetition = ['hey']
+
+print (repetition * 3) #['hey', 'hey', 'hey']
+
+print([1, 2, 3] + [4, 5, 6] == [1, 2, 3, 4, 5, 6]) #True
+
+print('butter' in ['bread', 'butter', 'cheese']) #True
+
+reversed = ['bread', 'butter', 'cheese']
+reversed.reverse()
+print(reversed) #['cheese', 'butter', 'bread']
