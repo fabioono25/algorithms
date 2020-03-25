@@ -1,0 +1,13 @@
+/home/ono/study/algorithms/C#/AlgorithmsStudy/bin/Debug/netcoreapp3.1/AlgorithmsStudy
+/home/ono/study/algorithms/C#/AlgorithmsStudy/bin/Debug/netcoreapp3.1/AlgorithmsStudy.deps.json
+/home/ono/study/algorithms/C#/AlgorithmsStudy/bin/Debug/netcoreapp3.1/AlgorithmsStudy.runtimeconfig.json
+/home/ono/study/algorithms/C#/AlgorithmsStudy/bin/Debug/netcoreapp3.1/AlgorithmsStudy.runtimeconfig.dev.json
+/home/ono/study/algorithms/C#/AlgorithmsStudy/bin/Debug/netcoreapp3.1/AlgorithmsStudy.dll
+/home/ono/study/algorithms/C#/AlgorithmsStudy/bin/Debug/netcoreapp3.1/AlgorithmsStudy.pdb
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.csprojAssemblyReference.cache
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.csproj.CoreCompileInputs.cache
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.AssemblyInfoInputs.cache
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.AssemblyInfo.cs
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.dll
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.pdb
+/home/ono/study/algorithms/C#/AlgorithmsStudy/obj/Debug/netcoreapp3.1/AlgorithmsStudy.genruntimeconfig.cache
