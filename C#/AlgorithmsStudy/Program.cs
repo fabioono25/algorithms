@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.IO;
 
 namespace AlgorithmsStudy
 {
@@ -119,8 +120,49 @@ namespace AlgorithmsStudy
         }
     }
 
+    public abstract class AbstractX {
 
+        public AbstractX()
+        {
+            
+        }
 
+        public int MyProperty { get; set; }
+
+        public void returnValue() 
+        { 
+            Console.WriteLine("asdas");
+        }
+
+        public abstract void rest();
+
+    }
+
+    public interface ITest {
+        string Name { get; set; }
+
+        void test();
+    }
+
+    public class InheritedClass : AbstractX, ITest
+    {
+        
+        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override void rest()
+        {
+
+            throw new NotImplementedException();
+        }
+
+        public void test()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public struct TestStruct {
+    }
 
     #endregion
 }
