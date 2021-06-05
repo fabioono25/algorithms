@@ -38,7 +38,7 @@ printFirstItemThenFirstHalfThenSayHi100Times(items) {
     for (var i = 0; i < 100; i++) { //O(100) - O(1)
         console.log('hi');
     }
-}
+};
 
 //result -> O(n + 1) = O(n)
 
@@ -53,7 +53,6 @@ function compressBoxesTwice(boxes) {
         console.log(boxes);
     });
 }
-
 //O(2n) -> O(n)
 
 function compressBoxesTwice(boxes, boxes2) {
