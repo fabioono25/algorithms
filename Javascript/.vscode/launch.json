@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\DataStructures\\Exercises\\ReverseString.js"
+            "program": "${workspaceFolder}\\DataStructures\\Exercises\\MergeSortedArrays.js"
         }
     ]
 }
