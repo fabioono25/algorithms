@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\DataStructures\\Exercises\\MergeSortedArrays.js"
+            "program": "${workspaceFolder}\\ES6\\tests.js"
+            //"program": "${workspaceFolder}\\DataStructures\\Exercises\\MergeSortedArrays.js"
         }
     ]
 }
