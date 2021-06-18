@@ -13,7 +13,7 @@ user.spell = 'asdasdasd';   //O(1)
 user.scream(); //O(1)
 
 //ES6: Map/Sets
-const a = new Map(); //allows to save any datatype as the key (despite of string)
+const a = new Map(); //allows to save any datatype as the key (despite of string) - order of insertion maintained
 const b = new Set(); //only stores the keys, no values
 
 
@@ -22,7 +22,7 @@ create the methods set and get
 */
 class HashTable {
     constructor(size){
-      this.data = new Array(size);
+      this.data = new Array(size); // how many spaces available
     }
   
     _hash(key) {
@@ -33,17 +33,17 @@ class HashTable {
       return hash;
     } //O(1) - using a key
 
-    set(key, value){
+    set(key, value){ // O(1)
         var address = this._hash(key);
 
-        if (!this.data[address]){
+        if (!this.data[address]){ // if a collision occurred
             this.data[address] = [];
-        }            
+        }
         
         this.data[address].push([key,value]);
     } //O(1)
 
-    get(key){
+    get(key){ // O(1) - considering no-collisions [can be O(n)]
         var address = this._hash(key);
         const currentBucket = this.data[address];
 
@@ -51,7 +51,7 @@ class HashTable {
             for (let i = 0; i < currentBucket.length; i++) {
                 if (currentBucket[i][0] === address){
                     return currentBucket[i][1];
-                }                
+                }
             }
         } //O(1) - most of time
 
