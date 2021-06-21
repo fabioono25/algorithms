@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\ES6\\tests.js"
+            "program": "${workspaceFolder}\\DataStructures\\2-HashTables-Exercises\\FirstRecurringCharacter.js"
             //"program": "${workspaceFolder}\\DataStructures\\Exercises\\MergeSortedArrays.js"
         }
     ]
