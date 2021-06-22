@@ -1,0 +1,1 @@
+docker run dit --rm -v C:/Users/FabioOnoTavoloni/Documents/study/algorithms/Javascript/ES6/modules -p 9999:80 nginx /bin/sh
