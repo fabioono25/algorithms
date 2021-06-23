@@ -26,20 +26,22 @@ class Node { //it's possible to use this class
 
 class LinkedList {
     constructor(value) {
-        this.head = {
-            value: value,
-            next: null
-        }
+        // this.head = {
+        //     value: value,
+        //     next: null
+        // }
+        this.head = new Node(value);
 
         this.tail = this.head; //because we have only one object for now
         this.length = 1;
     }
 
     append(value) {
-        const newNode = {
-            value: value,
-            next: null
-        }
+        // const newNode = {
+        //     value: value,
+        //     next: null
+        // }
+        const newNode = new Node(value);
 
         this.tail.next = newNode;
         this.tail = newNode;
@@ -76,13 +78,11 @@ class LinkedList {
     }
 
     insert(index, value) {
-
         // if (index === 0) {
         //     this.prepend(value);
         //     return this.printList();
         // }
 
-        
         if (index >= this.length) {
             return this.append(value);
         }
