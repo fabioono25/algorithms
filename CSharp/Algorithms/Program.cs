@@ -5,4 +5,5 @@
 // Anagram.Execute();
 // FirstUniqueChar.Execute();
 // BuySellStock.Execute();
-ContainsDuplicates.Execute();
+// ContainsDuplicates.Execute();
+FizzBuzz.Execute();
