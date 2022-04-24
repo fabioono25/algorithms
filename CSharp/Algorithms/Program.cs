@@ -2,4 +2,5 @@
 
 // BinaryGap.Execute();
 // ReverseString.Execute();
-Anagram.Execute();
+// Anagram.Execute();
+FirstUniqueChar.Execute();
