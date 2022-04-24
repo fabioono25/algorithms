@@ -9,7 +9,6 @@ namespace Algorithms.CodeChallenges
     public static class BuySellStock
     {
         public static void Execute(){
-
            Console.WriteLine($"Max profit for [7, 1, 5, 3, 6, 4] is: {maxProfit(new[] {7, 1, 5, 3, 6, 4})}");
            Console.WriteLine($"Max profit for [7, 6, 4, 3, 1] is: {maxProfit(new[] {7, 6, 4, 3, 1})}");
         }
