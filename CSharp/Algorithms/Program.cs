@@ -1,4 +1,4 @@
 ﻿using Algorithms.CodeChallenges;
 
-// Binary Gap
-BinaryGap.Execute();
+//BinaryGap.Execute();
+ReverseString.Execute();
