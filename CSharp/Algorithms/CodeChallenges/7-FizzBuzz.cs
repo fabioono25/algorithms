@@ -9,7 +9,6 @@ namespace Algorithms.CodeChallenges
     {
         public static void Execute(){
             Console.WriteLine($"Given 15: {string.Join(",", fizzBuzz(15))}");
-            //Console.WriteLine($"[1,2,3,4] contains duplicates: {containsDuplicates(new[] {1,2,3,4})}");            
         }
 
         private static List<string> fizzBuzz(int n) {

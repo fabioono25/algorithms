@@ -6,4 +6,5 @@
 // FirstUniqueChar.Execute();
 // BuySellStock.Execute();
 // ContainsDuplicates.Execute();
-FizzBuzz.Execute();
+// FizzBuzz.Execute();
+SingleNumber.Execute();
