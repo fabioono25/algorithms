@@ -11,7 +11,7 @@ namespace Algorithms.CodeChallenges
         public static void Execute(){
            Console.WriteLine($"First unique character of leetcode: {firsUniqueCharacterIndex("leetcode")}");
            Console.WriteLine($"First unique character of loveleetcode: {firsUniqueCharacterIndex("loveleetcode")}");
-            Console.WriteLine($"First unique character of aabbcc: {firsUniqueCharacterIndex("aabbcc")}");
+           Console.WriteLine($"First unique character of aabbcc: {firsUniqueCharacterIndex("aabbcc")}");
         }
 
         private static int firsUniqueCharacterIndex(string s) {
