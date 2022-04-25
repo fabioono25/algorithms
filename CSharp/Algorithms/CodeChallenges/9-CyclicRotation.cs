@@ -16,7 +16,6 @@ namespace Algorithms.CodeChallenges
             Console.WriteLine($"Rotate [1, 2, 3, 4] by K=4 will give: {string.Join(",", rotate(new[]{1, 2, 3, 4}, 4))}");
         }
 
-        // considering that the input strings are same length, otherwise we should verify and return false if they are different
         private static int[] rotate(int[] items, int k) {
 
             //0º if the array is empty    

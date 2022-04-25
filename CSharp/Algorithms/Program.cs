@@ -8,4 +8,5 @@
 // ContainsDuplicates.Execute();
 // FizzBuzz.Execute();
 // SingleNumber.Execute();
-CyclicRotation.Execute();
+// CyclicRotation.Execute();
+OddOccurrences.Execute();
