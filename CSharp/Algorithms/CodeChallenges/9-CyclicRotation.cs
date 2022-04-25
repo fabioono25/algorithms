@@ -19,6 +19,10 @@ namespace Algorithms.CodeChallenges
         // considering that the input strings are same length, otherwise we should verify and return false if they are different
         private static int[] rotate(int[] items, int k) {
 
+            //0º if the array is empty    
+            if (items.Length == 0)
+                return items;
+
             // 1º we should correct k in order to avoid duplicated interactions
             var newK = k % items.Length;
 
