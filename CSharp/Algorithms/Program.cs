@@ -7,4 +7,5 @@
 // BuySellStock.Execute();
 // ContainsDuplicates.Execute();
 // FizzBuzz.Execute();
-SingleNumber.Execute();
+// SingleNumber.Execute();
+CyclicRotation.Execute();
