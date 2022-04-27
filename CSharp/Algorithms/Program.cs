@@ -10,4 +10,5 @@
 // SingleNumber.Execute();
 // CyclicRotation.Execute();
 // OddOccurrences.Execute();
-ValidParenthesis.Execute();
+// ValidParenthesis.Execute();
+PowerOfTwo.Execute();
