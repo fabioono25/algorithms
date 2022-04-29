@@ -12,6 +12,6 @@
 // OddOccurrences.Execute();
 // ValidParenthesis.Execute();
 // PowerOfTwo.Execute();
-// Fibonacci.Execute();
+Fibonacci.Execute();
 // Factorial.Execute();
-Subset.Execute();
+// Subset.Execute();
