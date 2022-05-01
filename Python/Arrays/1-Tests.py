@@ -48,3 +48,7 @@ print(array2)
 # removing from array
 array2.remove('added in the middle') # first occurrence
 print(array2[:])
+
+# changing value of an existing array
+array2[2] = 'value was changed'
+print(array2)

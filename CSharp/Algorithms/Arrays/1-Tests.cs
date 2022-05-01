@@ -26,6 +26,9 @@ namespace Algorithms.DataStructures.Arrays
 
             var index = Array.IndexOf(arr, 20);
             arr = arr.Where((val, idx) => idx != index).ToArray();
+
+            // changing value of an existing array
+            arr[2] = 999;
         }
     }
 }

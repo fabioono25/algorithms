@@ -29,3 +29,7 @@ strings.splice(2, 0, 'z'); //O(n/2) => O(n)
 
 //in Javascript/Python, the arrays are automatically allocate memory according the increase resize
 //with we add a new letter to initial strings array, it usually doubles the space (it'll copy the entire array)
+
+// changing a value in the array
+strings[2] = 'changed value';
+console.log(strings);
