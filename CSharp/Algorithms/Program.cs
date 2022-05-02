@@ -13,7 +13,7 @@ using Algorithms.DataStructures.Arrays;
 // OddOccurrences.Execute();
 // ValidParenthesis.Execute();
 // PowerOfTwo.Execute();
-// Fibonacci.Execute();
+Fibonacci.Execute();
 // Factorial.Execute();
 //Subset.Execute();
 
