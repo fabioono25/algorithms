@@ -1,4 +1,5 @@
-﻿using Algorithms.CodeChallenges;
+﻿using Algorithms.Arrays;
+using Algorithms.CodeChallenges;
 using Algorithms.DataStructures.Arrays;
 
 // BinaryGap.Execute();
@@ -13,10 +14,11 @@ using Algorithms.DataStructures.Arrays;
 // OddOccurrences.Execute();
 // ValidParenthesis.Execute();
 // PowerOfTwo.Execute();
-Fibonacci.Execute();
+// Fibonacci.Execute();
 // Factorial.Execute();
 //Subset.Execute();
 
 
 // ARRAYS:
-Tests.Execute();
+//Tests.Execute();
+ReverseArray.Execute();
