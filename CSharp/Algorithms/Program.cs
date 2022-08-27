@@ -4,7 +4,7 @@ using Algorithms.DataStructures.Arrays;
 
 // BinaryGap.Execute();
 // ReverseString.Execute();
-// Anagram.Execute();
+ Anagram.Execute();
 // FirstUniqueChar.Execute();
 // BuySellStock.Execute();
 // ContainsDuplicates.Execute();
@@ -21,4 +21,4 @@ using Algorithms.DataStructures.Arrays;
 
 // ARRAYS:
 //Tests.Execute();
-ReverseArray.Execute();
+//ReverseArray.Execute();

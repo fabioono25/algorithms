@@ -15,7 +15,6 @@ namespace Algorithms.CodeChallenges
         // considering that the input strings are same length, otherwise we should verify and return false if they are different
         private static bool anagram(string s1, string s2) {
             var dict = new Dictionary<char, int>();
-            var arr = new String[s1.Length];
 
             foreach(var c in s1){
                 if (!dict.ContainsKey(c)){
@@ -31,7 +30,7 @@ namespace Algorithms.CodeChallenges
                 }
             }
 
-            return dict.Any(d => d.Value > 0);
+            return !dict.Any(d => d.Value > 0);
         }
     }
 }
