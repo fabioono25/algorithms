@@ -4,7 +4,7 @@ using Algorithms.DataStructures.Arrays;
 
 // BinaryGap.Execute();
 // ReverseString.Execute();
- Anagram.Execute();
+// Anagram.Execute();
 // FirstUniqueChar.Execute();
 // BuySellStock.Execute();
 // ContainsDuplicates.Execute();
@@ -16,7 +16,10 @@ using Algorithms.DataStructures.Arrays;
 // PowerOfTwo.Execute();
 // Fibonacci.Execute();
 // Factorial.Execute();
-//Subset.Execute();
+// Subset.Execute();
+// NumberOfIslands.Execute();
+// TwoNumbers.Execute();
+// PeakElement.Execute();
 
 
 // ARRAYS:

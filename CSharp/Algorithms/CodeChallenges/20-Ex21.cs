@@ -4,7 +4,7 @@ namespace Algorithms.CodeChallenges
     * Factorial is defined for n! = n X (n - 1) x (n - 2) x (n - 3) = n x (n - 1)!
     * 5! = 5 * 4 * 3 * 2 * 1 = 5 * 24 = 120
     ***/
-    public static class Ex18
+    public static class Ex21
     {
         public static void Execute(){
             Console.WriteLine($"Factorial of 5 is: {factorial(5)}");
