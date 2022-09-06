@@ -18,11 +18,54 @@ namespace Algorithms.CodeChallenges
     public static class NumberOfIslands
     {
         public static void Execute(){
-           //  Console.WriteLine($"Number of islands: {numberOfIslands()}");
+            // jagged array
+           //var grid = new int[][] {
+           // new int[] {1, 1, 0, 0, 0},
+           // new int[] {1, 1, 0, 0, 0},
+           // new int[] {0, 0, 1, 0, 0},
+           // new int[] {0, 0, 0, 1, 1}
+           //};
+           var grid = new int[][] {
+                new int[] {1, 0, 1, 0, 1},
+                new int[] {1, 1, 0, 0, 0},
+                new int[] {0, 0, 1, 0, 0},
+                new int[] {0, 0, 0, 1, 1}
+           };
+           Console.WriteLine($"Number of islands: {numberOfIslands(grid)}");
         }
 
-        private static int numberOfIslands(char[][] grid) {
-            return 0;
+        private static int numberOfIslands(int[][] grid) {
+
+            if (grid == null || grid.Length == 0)
+                return 0;
+
+            var numberOfIslands = 0;
+            for (var i = 0; i < grid.Length; i++)
+            {
+                for (int j = 0; j < grid[i].Length; j++)
+                {
+                    if (grid[i][j] == 1)
+                    {
+                        numberOfIslands += EvaluateIslandsDfs(grid, i, j);
+                    }
+                }
+            }    
+
+            return numberOfIslands;
+        }
+
+        private static int EvaluateIslandsDfs(int[][] grid, int i, int j)
+        {
+            if (i < 0 || i >= grid.Length || j < 0 || j >= grid[i].Length || grid[i][j] == 0)
+                return 0;
+
+            grid[i][j] = 0;
+            EvaluateIslandsDfs(grid, i + 1, j);
+            EvaluateIslandsDfs(grid, i - 1, j);
+            EvaluateIslandsDfs(grid, i, j + 1);
+            EvaluateIslandsDfs(grid, i, j - 1);
+
+            return 1;
         }
     }
 }

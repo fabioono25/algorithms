@@ -11,8 +11,7 @@ namespace Algorithms.CodeChallenges
         }
 
         private static int[] twoNumbers(int[] n, int target) {
-            
-            return result;
+            return new int[] {1,2,3};
         }
     }
 }
