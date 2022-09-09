@@ -3,7 +3,7 @@ namespace Algorithms.CodeChallenges
     /***
     * Calculate a Fibonacci series: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
     * F(n) = F(n-1) + F(n-2)
-    * calculate Fibonacci for a term number = n (length)
+    * calculate Fibonacci for a term number = n (length) >= 0
     ***/
     public static class Fibonacci
     {
@@ -25,7 +25,7 @@ namespace Algorithms.CodeChallenges
         }
 
         private static int fibonacci(int n) {
-            if (n == 0 || n == 1)
+            if (n < 2)
                 return n;
 
             var first = 0;
@@ -42,7 +42,7 @@ namespace Algorithms.CodeChallenges
         }
 
         private static int fibonacciRecursive(int n) {
-            if (n == 0 || n == 1)
+            if (n < 2)
                 return n;
 
             return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);

@@ -7,18 +7,20 @@ namespace Algorithms.CodeChallenges
     public static class Factorial
     {
         public static void Execute(){
+            Console.WriteLine($"Factorial of 25 is: {factorial(25)}");
             Console.WriteLine($"Factorial of 5 is: {factorial(5)}");
+            Console.WriteLine($"Factorial of 2 is: {factorial(2)}");
+            Console.WriteLine($"Factorial of 1 is: {factorial(1)}");
+            Console.WriteLine($"Factorial of 25 (recursive) is: {factorialRecursive(25)}");
             Console.WriteLine($"Factorial of 5 (recursive) is: {factorialRecursive(5)}");
+            Console.WriteLine($"Factorial of 2 (recursive) is: {factorialRecursive(2)}");
+            Console.WriteLine($"Factorial of 1 (recursive) is: {factorialRecursive(1)}");
         }
 
         private static int factorial(int n) {
-            if (n < 2)
-                return 1;
-
             var result = n;
-            for (var i = n; i > 1; i--){
+            for (var i = n; i > 2; i--)
                 result *= (i-1);
-            }
 
             return result;
         }
