@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 namespace Algorithms.CodeChallenges
 {
     /***
@@ -10,16 +11,25 @@ namespace Algorithms.CodeChallenges
         public static void Execute(){
             // O(n)
             Console.WriteLine($"Fibonacci of 1 is: {fibonacci(1)}");
+            Console.WriteLine($"Fibonacci of 2 is: {fibonacci(2)}"); 
             Console.WriteLine($"Fibonacci of 7 is: {fibonacci(7)}");
             Console.WriteLine($"Fibonacci of 9 is: {fibonacci(9)}");
 
+            // O(n)
+            Console.WriteLine($"Fibonacci of 1 using array is: {fibonacciWithArray(1)}");
+            Console.WriteLine($"Fibonacci of 2 using array is: {fibonacciWithArray(2)}");            
+            Console.WriteLine($"Fibonacci of 7 using array is: {fibonacciWithArray(7)}");
+            Console.WriteLine($"Fibonacci of 9 using array is: {fibonacciWithArray(9)}");
+
             // O(2^n)
             Console.WriteLine($"Fibonacci [recursive] of 1 is: {fibonacciRecursive(1)}");
+            Console.WriteLine($"Fibonacci [recursive] of 2 is: {fibonacciRecursive(2)}");
             Console.WriteLine($"Fibonacci [recursive] of 7 is: {fibonacciRecursive(7)}");
             Console.WriteLine($"Fibonacci [recursive] of 9 is: {fibonacciRecursive(9)}");
 
             // O(n)
             Console.WriteLine($"Fibonacci [recursive with memoization] of 1 is: {fibonacciCache(1)}");
+            Console.WriteLine($"Fibonacci [recursive with memoization] of 2 is: {fibonacciCache(2)}");
             Console.WriteLine($"Fibonacci [recursive with memoization] of 7 is: {fibonacciCache(7)}");
             Console.WriteLine($"Fibonacci [recursive with memoization] of 9 is: {fibonacciCache(9)}");
         }
@@ -39,6 +49,21 @@ namespace Algorithms.CodeChallenges
             }
 
             return result;
+        }
+
+        private static int fibonacciWithArray(int n) {
+            if (n < 2)
+                return n;
+            
+            var ret = new int[n+1];
+            ret[0] = 0;
+            ret[1] = 1;
+
+            var i = 2;
+            for (; i < n + 1; i++)
+                ret[i] = ret[i-2] + ret[i-1];
+                
+            return ret[i-1];
         }
 
         private static int fibonacciRecursive(int n) {
