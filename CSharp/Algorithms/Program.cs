@@ -17,9 +17,9 @@ using Algorithms.DataStructures.Arrays;
 // Fibonacci.Execute();
 // Factorial.Execute();
 // Subset.Execute();
-NumberOfIslands.Execute();
+// NumberOfIslands.Execute();
 // TwoNumbers.Execute();
-// PeakElement.Execute();
+ PeakElement.Execute();
 
 
 // ARRAYS:

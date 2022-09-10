@@ -8,12 +8,36 @@ namespace Algorithms.CodeChallenges
     public static class PeakElement
     {
         public static void Execute(){
-            // Console.WriteLine($"Factorial of 5 is: {factorial(5)}");
+            Console.WriteLine($"Peak element of array [1, 2, 3, 1] is: {peakElement(new int[]{1, 2, 3, 1})}");
+            Console.WriteLine($"Peak element of array [1,2,1,3,5,6,4] is: {peakElement(new int[]{1,2,1,3,5,6,4})}");
+
+            Console.WriteLine($"Peak element of array with BS [1, 2, 3, 1] is: {peakElementWithBinarySearch(new int[]{1, 2, 3, 1})}");
+            Console.WriteLine($"Peak element of array with BS [1,2,1,3,5,6,4] is: {peakElementWithBinarySearch(new int[]{1,2,1,3,5,6,4})}");            
         }
 
-        private static int peakElements(int[] n) {
-            
-            return 0;
+        private static int peakElement(int[] n) {
+            for (var i = 1; i < n.Length-1; i++)
+                if (n[i] > n[i-1] && n[i] > n[i+1])
+                    return i;
+
+            return -1;
+        }
+
+        private static int peakElementWithBinarySearch(int[] n) {
+            var left = 0;
+            var right = n.Length - 1;
+
+            while (left < right)
+            {
+                var mid = left + (right - left) / 2;
+
+                if (n[mid] < n[mid + 1])
+                    left += 1;
+                else
+                    right = mid;
+            }
+
+            return left;
         }
     }
 }

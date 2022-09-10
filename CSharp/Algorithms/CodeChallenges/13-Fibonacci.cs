@@ -34,6 +34,7 @@ namespace Algorithms.CodeChallenges
             Console.WriteLine($"Fibonacci [recursive with memoization] of 9 is: {fibonacciCache(9)}");
         }
 
+        // O(n)
         private static int fibonacci(int n) {
             if (n < 2)
                 return n;
@@ -51,6 +52,7 @@ namespace Algorithms.CodeChallenges
             return result;
         }
 
+        // O(n)
         private static int fibonacciWithArray(int n) {
             if (n < 2)
                 return n;
@@ -66,6 +68,7 @@ namespace Algorithms.CodeChallenges
             return ret[i-1];
         }
 
+        // O(2^N)
         private static int fibonacciRecursive(int n) {
             if (n < 2)
                 return n;
@@ -73,6 +76,7 @@ namespace Algorithms.CodeChallenges
             return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
         }
 
+        // O(N)
         private static readonly Dictionary<int, long> cache = new() {{0,0}, {1,1}};
         private static long fibonacciCache(int n) {
 
