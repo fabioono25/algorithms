@@ -20,7 +20,9 @@ using Algorithms.DataStructures.Arrays;
 // NumberOfIslands.Execute();
 // TwoNumbers.Execute();
 // PeakElement.Execute();
-ReverseInteger.Execute();
+// ReverseInteger.Execute();
+BackspaceStringCompare.Execute();
+
 
 // ARRAYS:
 //Tests.Execute();

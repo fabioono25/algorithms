@@ -13,11 +13,44 @@ namespace Algorithms.CodeChallenges
     public static class BackspaceStringCompare
     {
         public static void Execute(){
-            Console.WriteLine($"Factorial of 5 is: {backspaceCompare("ab#c","ad#c")}");
-            Console.WriteLine($"Factorial of 5 (recursive) is: {backspaceCompare("ab##", "c#d#")}");
+            Console.WriteLine($"Is #ab equals ab?: {backspaceCompare("#ab", "ab")}");
+            Console.WriteLine($"Is ab## equals c#d#?: {backspaceCompare("ab##", "c#d#")}");
+            Console.WriteLine($"Is ab#c equals ad#c?: {backspaceCompare("ab#c", "ad#c")}");
+            Console.WriteLine($"Is ab#c equals add#c?: {backspaceCompare("ab#c", "add#c")}");
+            Console.WriteLine($"Is ab##c equals #a#c?: {backspaceCompare("ab##c", "#a#c")}");
+            Console.WriteLine($"Is a#c equals b?: {backspaceCompare("a#c", "b")}");
         }
 
         private static bool backspaceCompare(string S, string T) {
+
+            var sStack = new Stack<char>();
+            var tStack = new Stack<char>();
+
+            // O(N)
+            foreach (var character in S)
+                if (character != '#')
+                    sStack.Push(character);
+                else if (sStack.Count > 0)
+                    sStack.Pop();
+
+            foreach (var character in T)
+            {
+                if (character != '#')
+                    tStack.Push(character);
+                else if (tStack.Count > 0)
+                    tStack.Pop();
+            }
+
+            // checking the stacks
+            if (sStack.Count != tStack.Count)
+                return false;
+
+            while (sStack.Count != 0)
+            {
+                if (sStack.Pop() != tStack.Pop())
+                    return false;
+            }
+
             return true;
         }
     }
