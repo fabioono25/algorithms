@@ -12,6 +12,7 @@ namespace Algorithms.CodeChallenges
             Console.WriteLine($"{String.Join(",", twoSumWithDictionary(new int[]{2, 7, 11, 15}, 9))}");
         }
 
+        // O(N ^ 2)
         private static int[] twoSum(int[] n, int target) {
             for (var i = 0; i < n.Length; i++){
                 var x = n[i];
@@ -23,6 +24,7 @@ namespace Algorithms.CodeChallenges
             return new int[]{-1,-1};
         }
 
+        // O(N)
         private static int[] twoSumWithDictionary(int[] n, int target) {
             var dict = new Dictionary<int, int>();
 

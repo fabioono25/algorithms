@@ -19,8 +19,8 @@ using Algorithms.DataStructures.Arrays;
 // Subset.Execute();
 // NumberOfIslands.Execute();
 // TwoNumbers.Execute();
- PeakElement.Execute();
-
+// PeakElement.Execute();
+ReverseInteger.Execute();
 
 // ARRAYS:
 //Tests.Execute();
