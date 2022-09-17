@@ -7,4 +7,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="CodeChallenges\21-MoveZeroes %28copy%29.cs" />
+    <Compile Remove="CodeChallenges\21-MoveZeroes %28another copy%29.cs" />
+    <Compile Remove="CodeChallenges\21-MoveZeroes %283rd copy%29.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
 </Project>

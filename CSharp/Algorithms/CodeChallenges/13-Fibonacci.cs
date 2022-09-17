@@ -32,6 +32,12 @@ namespace Algorithms.CodeChallenges
             Console.WriteLine($"Fibonacci [recursive with memoization] of 2 is: {fibonacciCache(2)}");
             Console.WriteLine($"Fibonacci [recursive with memoization] of 7 is: {fibonacciCache(7)}");
             Console.WriteLine($"Fibonacci [recursive with memoization] of 9 is: {fibonacciCache(9)}");
+
+            // O(n)
+            Console.WriteLine($"Fibonacci [with stack] of 1 is: {fibonacciStack(1)}");
+            Console.WriteLine($"Fibonacci [with stack] of 2 is: {fibonacciStack(2)}");
+            Console.WriteLine($"Fibonacci [with stack] of 7 is: {fibonacciStack(7)}");
+            Console.WriteLine($"Fibonacci [with stack] of 9 is: {fibonacciStack(9)}");
         }
 
         // O(n)
@@ -87,6 +93,24 @@ namespace Algorithms.CodeChallenges
             cache[n] = val;
 
             return val;
+        }
+
+        // Fibonacci using stack (bottom-up)
+        private static long fibonacciStack(int n)
+        {
+            var result = new Stack<int>();
+            result.Push(0);
+            result.Push(1);
+            for (int i = 2; i <= n; i++)
+            {
+                var current = result.Pop();
+                var previous = result.Pop();
+                var next = previous + current;
+                result.Push(previous);
+                result.Push(current);
+                result.Push(next);
+            }
+            return result.Pop();
         }
     }
 }
