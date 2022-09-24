@@ -23,4 +23,5 @@
 // MinWindowSubstring.Execute();
 // NonrepeatingCharacter.Execute();
 // FirstBadVersion.Execute();
-PaintHouse.Execute();
+// PaintHouse.Execute();
+MoveZeroes.Execute();

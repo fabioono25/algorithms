@@ -1,22 +1,31 @@
 namespace Algorithms.CodeChallenges
 {
     /***
-    * Row of n houses, each can be painted in red, blue or green. the cost for each house is different. 
-    * Paint all the houses such that no two adjacent houses have the same color.
-    * cost is represented by n x 3 cost matrix. Ex: costs[0][0] is the cost of painting house 0 with color red.
-    * costs[1][2] is the cost of painting house 1 with color green and so. Find the minimum cost to paint all houses.
-    * input[[17,2,17],[16,16,5],[14,3,19]], output: 10
-    * (paint house 0 in blue, house 1 in green, house 2 in blue - mincost: 2+5+3=10)
+    * Given an array of nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+    * Example: input=[0,1,0,3,12] output=[1,3,12,0,0]
+    * Don't make a copy of the array.
     ***/
-    public static class MovieZeroes
+    public static class MoveZeroes
     {
         public static void Execute(){
-            // Console.WriteLine($"Factorial of 5 is: {factorial(5)}");
-            // Console.WriteLine($"Factorial of 5 (recursive) is: {factorialRecursive(5)}");
+            Console.WriteLine($"Moving zeroes of [0,1,0,3,12] is: {string.Join(",", moveZeroes(new[]{0,1,0,3,12}))}");
         }
 
-        private static int minCost(int[][] costs) {
-            return 0;
+        private static int[] moveZeroes(int[] nums) {
+            var index = 0;
+            for (var i = 0; i < nums.Length; i++)
+            {
+                if(nums[i] != 0) {
+                    nums[index++] = nums[i];
+                }
+            }
+
+            for (var i = index; i < nums.Length; i++)
+            {
+                nums[i] = 0;
+            }
+
+            return nums; 
         }
     }
 }
