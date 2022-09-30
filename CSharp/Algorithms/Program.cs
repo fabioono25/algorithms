@@ -24,4 +24,5 @@
 // NonrepeatingCharacter.Execute();
 // FirstBadVersion.Execute();
 // PaintHouse.Execute();
-MoveZeroes.Execute();
+// MoveZeroes.Execute();
+BinarySearchTree.Execute();
