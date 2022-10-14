@@ -25,4 +25,6 @@
 // FirstBadVersion.Execute();
 // PaintHouse.Execute();
 // MoveZeroes.Execute();
-BinarySearchTree.Execute();
+// BinarySearchTree.Execute();
+//DecoratorStream.Execute();
+Test.Execute();
