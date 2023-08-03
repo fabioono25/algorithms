@@ -24,6 +24,7 @@ Characteristics:
 
 <p>&nbsp;</p>
 
+
 <center>
 
 |Operation                          | Time Complexity                         |
@@ -36,6 +37,11 @@ Characteristics:
 
 </center>
 
+## Lists: A versatile, ordered collection that can store various data types.
 
-## Linked Lists:
+## Linked Lists: A linear data structure where each element points to the next one.
+
+## Stacks: Follows the Last-In-First-Out (LIFO) principle for element access.
+
+## Queues: Follows the First-In-First-Out (FIFO) principle for element access.
 
