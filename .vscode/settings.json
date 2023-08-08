@@ -1,3 +1,7 @@
 {
-  "dotnet.defaultSolution": "Old/CSharp/Algorithms/Algorithms.sln"
+  "dotnet.defaultSolution": "Old/CSharp/Algorithms/Algorithms.sln",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.formatting.provider": "none"
 }
