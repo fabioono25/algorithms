@@ -1,10 +1,16 @@
-# Algoritms
+# Data Structures:
+
+
 
 ## Arrays:
 
 Characteristics:
 
+- They represent an ordered group of elements.
+
 - Every item is identified by an index, located in the RAM and next to each other.
+
+- They are immutable in their essence (arrays, lists in Python).
 
 - They are known as a random access structure, meaning that each element can be accessed directly and in constant time.
 
