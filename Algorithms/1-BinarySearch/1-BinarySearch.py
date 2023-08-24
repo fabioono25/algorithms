@@ -15,7 +15,6 @@ def binary_search(list, item):
       low = mid + 1
   return None
 
-# def binary_search_recursion(list, item):
 
 print(binary_search([1, 3, 5, 7, 9], 3)) # => 1
-# print(binary_search_recursion([1, 3, 5, 7, 9], -1)) # => None
+print(binary_search([1, 3, 5, 7, 9], -1)) # => None
