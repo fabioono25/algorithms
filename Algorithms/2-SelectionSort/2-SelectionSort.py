@@ -1,5 +1,16 @@
 # here is an implementation of Selection sort
 
+def selection_sort_basic(arr):
+  temp = []
+  length = len(arr)
+  
+  for i in range(length):
+    for j in range(i + 1, length):
+      if (arr[i] > arr[j]):
+        arr[j], arr[i] = arr[i], arr[j]
+  return arr
+
+
 def selection_sort(arr):
   new_arr = []
   for i in range(len(arr)):
@@ -15,6 +26,9 @@ def find_smallest(arr):
       smallest = arr[i]
       smallest_index = i
   return smallest_index
+
+print(selection_sort_basic([5, 3, 6, 2, 10])) # => [2, 3, 5, 6, 10]
+print(selection_sort_basic([5, 11, 6, 2, 10])) # => [2, 5, 6, 10, 11]
 
 print(selection_sort([5, 3, 6, 2, 10])) # => [2, 3, 5, 6, 10]
 print(selection_sort([5, 11, 6, 2, 10])) # => [2, 5, 6, 10, 11]
