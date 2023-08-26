@@ -1,5 +1,6 @@
 # here is an implementation of Selection sort
 
+#Time complexity: O(n^2), Space complexity: O(n)
 def selection_sort_basic(arr):
   temp = []
   length = len(arr)
@@ -9,7 +10,6 @@ def selection_sort_basic(arr):
       if (arr[i] > arr[j]):
         arr[j], arr[i] = arr[i], arr[j]
   return arr
-
 
 def selection_sort(arr):
   new_arr = []
