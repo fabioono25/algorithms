@@ -1,7 +1,5 @@
 # Data Structures:
 
-
-
 ## Arrays:
 
 Characteristics:
@@ -17,7 +15,7 @@ Characteristics:
 - Static arrays have the memory allocation defined at compile time and the memory is allocated in the stack. Fixed size.
 
 - Dynamic arrays is completed at runtime and the memory is allocated in the heap. The size of the array is not fixed.
- 
+
 - Some important data structures, like stacks, queues, dictionaries (hashtables) use arrays in their construction, because of the random indexing characteristics.
 
 - When an array becomes "full", it is necessary allocate a larger chunk of memory in the RAM (2x the size of actual array), copying all existing items to this new array [O(n) operation].
@@ -28,18 +26,15 @@ Characteristics:
 
 - Arrays are considered static structures (that must know the size upfront or it must be resized each time).
 
-<p>&nbsp;</p>
-
-
 <center>
 
-|Operation                          | Time Complexity                         |
-|-------------------------------|-----------------------------|
-|Access            				  |O(1)	     |
-|Search            				  |O(n)	     |
-|Insertion        				  |O(n)	     |
-|Deletion         				  |O(n)	     |
-|Append            				  |O(1)	     |
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Access    | O(1)            |
+| Search    | O(n)            |
+| Insertion | O(n)            |
+| Deletion  | O(n)            |
+| Append    | O(1)            |
 
 </center>
 
@@ -55,36 +50,33 @@ Characteristics:
 
 # Algorithms:
 
-
-
 ## Binay Search:
 
 Characteristics:
 
-  - Binary Search is a search algorithm used to find the position of a target value within a **sorted array**.
+- Binary Search is a search algorithm used to find the position of a target value within a **sorted array**.
 
-  - It works by repeatedly dividing the search range **in half** until the target value is found or the search range is empty.
+- It works by repeatedly dividing the search range **in half** until the target value is found or the search range is empty.
 
-  - Binary Search is **efficient for large datasets** because it eliminates half of the remaining elements in each step.
+- Binary Search is **efficient for large datasets** because it eliminates half of the remaining elements in each step.
 
-  - It is most effective on sorted arrays, as **the sorted nature of the array is crucial** to the algorithm's efficiency.
+- It is most effective on sorted arrays, as **the sorted nature of the array is crucial** to the algorithm's efficiency.
 
-  - Binary Search can be implemented both iteratively and recursively.
+- Binary Search can be implemented both iteratively and recursively.
 
-  - The algorithm compares the target value with the middle element of the current search range and eliminates one half of the range in each step.
+- The algorithm compares the target value with the middle element of the current search range and eliminates one half of the range in each step.
 
-  - If the middle element is not the target, the search range is narrowed down to either the left or the right half, depending on whether the target value is smaller or larger than the middle element.
+- If the middle element is not the target, the search range is narrowed down to either the left or the right half, depending on whether the target value is smaller or larger than the middle element.
 
-  - The process continues until the target value is found or the search range is empty.
+- The process continues until the target value is found or the search range is empty.
 
 <p>&nbsp;</p>
 
-
 <center>
 
-|Operation                          | Time Complexity                         |
-|-------------------------------|-----------------------------|
-|Access            				  |O(log n)	     |
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Access    | O(log n)        |
 
 </center>
 
@@ -113,4 +105,3 @@ Some real-world use cases for binary search:
 - Searching in Game Development: In game development, binary search can be used for collision detection algorithms, ray tracing, and other spatial searching tasks.
 
 - Network Routing: In networking and routing protocols, binary search can assist in identifying optimal routes or nodes in network topologies.
-

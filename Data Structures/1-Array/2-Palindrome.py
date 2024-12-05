@@ -20,10 +20,14 @@ def isPalindrome2(s):
 
   return isPalindrome2(s[1:-1])
 
-# Solution 3: O(n) time | O(1) space
+# Solution 3: using list comprehension - O(n) time | O(n) space
+def isPalindrome3(s):
+  return s == s[::-1] # what is this doing: it is reversing the string and comparing it with the original string
 
 
 print('racecar: ', isPalindrome1("racecar"))
 print('racecars: ', isPalindrome1("racecars"))
 print('racecar: ', isPalindrome2("racecar"))
 print('racecars: ', isPalindrome2("racecars"))
+print('racecar: ', isPalindrome3("racecar"))
+print('racecars: ', isPalindrome3("racecars"))

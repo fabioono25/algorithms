@@ -1,4 +1,5 @@
 # we need to reverse a list in O(N) time complexity
+# consider that the list is ordered:
 
 list = [1,2,3,4,5,6]
 
@@ -18,6 +19,8 @@ def solution2():
     high_index -= 1
   return list
 
+
 # call the function
-print(solution1())
-print(solution2())
+print('original: ', list)
+print('solution 1 (brutal force): ', solution1())
+print('solution 2 (using in-place reversal)', solution2())
