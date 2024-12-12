@@ -3,6 +3,9 @@
 # if you want to use an array - you can use NumPy library
 my_list = [1,2,3,4,5,6, "Test", 4.5]
 
+print(432 % 10)
+print(43 % 10)
+
 print(my_list) # [1, 2, 3, 4, 5, 6]
 print(my_list[0]) # 1
 print(type(my_list)) # <class 'list'>
@@ -22,8 +25,8 @@ my_list.append(100)
 my_list.append(100)
 
 print(my_list)
-print(my_list[-1]) # 100
-print(my_list[-3]) # 4.5
+print(my_list[-1]) # prints the last element in the list
+print(my_list[-3]) # 4.5 prints the third element from the end of the list
 print(my_list[0: 2]) # [99, 3]
 
 print(50*'=')

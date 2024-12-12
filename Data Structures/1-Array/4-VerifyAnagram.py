@@ -42,7 +42,6 @@ def is_anagram_sorting2(str1, str2):
 
   return sorted(str1) == sorted(str2)
 
-
 print(is_anagram_hashmap("restful", "fluster"))  
 print(is_anagram_hashmap("aaabbbccc", "abcabcabc"))
 print(is_anagram_hashmap("aaabbbccc", "abcabcasbc"))
