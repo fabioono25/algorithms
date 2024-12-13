@@ -93,3 +93,7 @@ print(50*'=')
 
 test = 'racecars'
 print(test[::-1]) # sracecar
+
+print(4 // 2)
+print(5 // 2 )
+print (5 / 2)
