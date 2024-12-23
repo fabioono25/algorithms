@@ -56,6 +56,9 @@ print(result5) # 4
 list1.reverse()
 print(list1) # [5, 2, 1]
 
+# remove item by index
+del list1[1] # [5, 1]
+
 listNames = ['Alex', 'John', 'Mary', 'Steve', 'Anna']
 listNames.sort()
 print(listNames) # ['Alex', 'John', 'Mary', 'Steve']
